@@ -8,7 +8,7 @@ function page() {
 
       <Meteors number={30} />
         <div className="pt-32 px-5 lg:mx-80 sm:mx-20">
-          <div className="text-center dark:text-white">
+          <div className="text-center text-white">
           <h1 className="text-7xl font-extrabold ">
             Contact Us
           </h1>
