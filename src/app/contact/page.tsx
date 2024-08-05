@@ -1,0 +1,40 @@
+"use client";
+import { Meteors } from "@/components/ui/meteors";
+import { Button } from "@/components/ui/moving-border";
+
+function page() {
+  return (
+    <div className="bg-slate-950 ">
+      <Meteors number={30} />
+        <div className="mx-auto pt-40 px-60">
+          <div className="text-center ">
+          <h1 className="text-7xl font-extrabold ">
+            Contact Us
+          </h1>
+          <p className="mt-6 text-2xl font-extralight ">
+            We are here to help with any question about our courses, programs,or events. Reach out and let us know how we can assists you in your musical journey.
+          </p>
+        </div>
+        <form action="#">
+        <div className="my-10">
+          <label htmlFor="Your email" className="block mb-2 text-sm front-medium text-gray-300">Your email :</label>
+          <input type="email" className="shadow-sm bg-gray-500 w-full rounded p-2 border-none outline-none" placeholder="Enter Your Email"/>
+        </div>
+        <div>
+        <label htmlFor="Your message" className="block mb-2 text-sm front-medium text-gray-300">Your message :</label>
+        <textarea name="message" id="message" className="text-xl shadow-sm bg-gray-500 w-full rounded p-2 border-none outline-none" placeholder="Enter Your Message"></textarea>
+        </div>
+        <div className="py-10 ">  
+            <Button
+              borderRadius="1.75rem"
+              className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+            >
+              Send message
+            </Button>
+        </div>
+        </form>
+      </div>
+    </div>
+  );
+}
+export default page;
