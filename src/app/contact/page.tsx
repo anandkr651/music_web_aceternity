@@ -4,9 +4,9 @@ import { Button } from "@/components/ui/moving-border";
 
 function page() {
   return (
-    <div className="bg-slate-950 ">
+    <div className="bg-slate-950 w-full h-full overflow-hidden">
       <Meteors number={30} />
-        <div className="mx-auto pt-40 px-60">
+        <div className="pt-32 px-5 lg:mx-40">
           <div className="text-center ">
           <h1 className="text-7xl font-extrabold ">
             Contact Us
@@ -24,7 +24,7 @@ function page() {
         <label htmlFor="Your message" className="block mb-2 text-sm front-medium text-gray-300">Your message :</label>
         <textarea name="message" id="message" className="text-xl shadow-sm bg-gray-500 w-full rounded p-2 border-none outline-none" placeholder="Enter Your Message"></textarea>
         </div>
-        <div className="py-10 ">  
+        <div className="pt-10 pb-4 ">  
             <Button
               borderRadius="1.75rem"
               className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
